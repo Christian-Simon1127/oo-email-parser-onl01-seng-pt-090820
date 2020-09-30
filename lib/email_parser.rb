@@ -14,7 +14,7 @@ class EmailAddressParser
     if @emails.include?(",")
       ret_arr = @emails.split(",")
     else 
-      ret_arr = @emails.split("")
+      ret_arr = @emails.split(" ")
     end
     
     ret_arr2 = []
