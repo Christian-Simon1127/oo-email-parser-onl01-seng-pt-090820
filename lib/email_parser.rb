@@ -11,7 +11,8 @@ class EmailAddressParser
   
   def parse 
     ret_arr = []
-    
+    #if @emails.include?(",")
+    ret_arr = @emails.split(",", " ")
     
     
     
