@@ -20,9 +20,9 @@ class EmailAddressParser
     end
     
     ret_arr.each {|item|
-      if @emails.include?(", ")
-        ret_arr = @emails.split(", ")
-      elsif @emails.include?(" ")
+      if item.include?(", ")
+        ret_arr = item.split(", ")
+      elsif item.include?(" ")
         ret_arr = @emails.split(" ")
       else 
         ret_arr = @emails.split(",")
