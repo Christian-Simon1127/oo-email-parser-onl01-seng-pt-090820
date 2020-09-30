@@ -21,11 +21,11 @@ class EmailAddressParser
     
     ret_arr.each {|item|
       if item.include?(", ")
-        ret_arr = item.split(", ")
+        item = item.split(", ")
       elsif item.include?(" ")
-        ret_arr = item.split(" ")
+        item = item.split(" ")
       else 
-        ret_arr = item.split(",")
+        item = item.split(",")
       end
     }
     
