@@ -23,9 +23,9 @@ class EmailAddressParser
       if item.include?(", ")
         ret_arr = item.split(", ")
       elsif item.include?(" ")
-        ret_arr = @emails.split(" ")
+        ret_arr = item.split(" ")
       else 
-        ret_arr = @emails.split(",")
+        ret_arr = item.split(",")
       end
     }
     
