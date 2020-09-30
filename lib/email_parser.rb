@@ -26,7 +26,7 @@ class EmailAddressParser
       #  item = temp_arr[0]
        # ret_arr << temp_arr[1]
       end
-            counter += 1
+    counter += 1
     }
     ret_arr.flatten
     ret_arr2 = []
