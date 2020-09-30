@@ -19,9 +19,11 @@ class EmailAddressParser
       ret_arr = @emails.split(",")
     end
     
+    counter = 0
     ret_arr.each {|item|
+      counter += 1
       if item.include?(" ")
-        ret_arr[item] = item.split(" ")
+        ret_arr[counter] = item.split(" ")
       #  item = temp_arr[0]
        # ret_arr << temp_arr[1]
       end
