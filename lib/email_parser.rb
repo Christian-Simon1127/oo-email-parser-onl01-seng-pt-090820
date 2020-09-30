@@ -26,7 +26,7 @@ class EmailAddressParser
        # ret_arr << temp_arr[1]
       end
     }
-    
+    ret_arr.flatten
     ret_arr2 = []
     ret_arr.each {|item|
       unless ret_arr2.include?(item) || item.include?(" ")
