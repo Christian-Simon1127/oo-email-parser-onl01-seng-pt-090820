@@ -20,12 +20,8 @@ class EmailAddressParser
     end
     
     ret_arr.each {|item|
-      if item.include?(", ")
+      if item.include?(" ")
         item = item.split(", ")
-      elsif item.include?(" ")
-        item = item.split(" ")
-      else 
-        item = item.split(",")
       end
     }
     
