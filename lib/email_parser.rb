@@ -11,8 +11,11 @@ class EmailAddressParser
   
   def parse 
     ret_arr = []
-    #if @emails.include?(",")
-    ret_arr = @emails.split(", ")
+    if @emails.include?(",")
+      ret_arr = @emails.split(",")
+    else 
+      ret_arr = @emails.split(" ")
+    end
     
     
     
