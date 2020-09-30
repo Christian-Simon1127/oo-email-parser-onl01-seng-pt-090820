@@ -21,6 +21,7 @@ class EmailAddressParser
     ret_arr.each {|item|
       unless ret_arr2.include?(item)
         ret_arr2 << item
+      end
     }
     ret_arr2
     
