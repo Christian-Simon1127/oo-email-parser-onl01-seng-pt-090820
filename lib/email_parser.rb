@@ -29,7 +29,7 @@ class EmailAddressParser
     
     ret_arr2 = []
     ret_arr.each {|item|
-      unless ret_arr2.include?(item)
+      unless ret_arr2.include?(item) || item.include?(" ")
         ret_arr2 << item
       end
     }
