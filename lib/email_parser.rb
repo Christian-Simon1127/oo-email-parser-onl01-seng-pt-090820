@@ -33,7 +33,7 @@ class EmailAddressParser
         ret_arr2 << item
       end
     }
-    ret_arr2
+    ret_arr2.flatten
     
   end 
   
