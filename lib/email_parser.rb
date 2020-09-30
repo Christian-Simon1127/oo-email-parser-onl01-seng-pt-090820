@@ -21,7 +21,7 @@ class EmailAddressParser
     
     ret_arr.each {|item|
       if item.include?(" ")
-        item = item.split(" ")
+        ret_arr << item.split(" ")
       end
     }
     
