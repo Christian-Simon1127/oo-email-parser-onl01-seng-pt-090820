@@ -22,7 +22,7 @@ class EmailAddressParser
     ret_arr2 = []
     ret_arr.each {|item|
       unless ret_arr2.include?(item)
-        ret_arr2 << item
+        ret_arr2 << item.split
       end
     }
     ret_arr2
