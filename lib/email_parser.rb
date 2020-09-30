@@ -19,6 +19,16 @@ class EmailAddressParser
       ret_arr = @emails.split(",")
     end
     
+    ret_arr.each {|item|
+      if @emails.include?(", ")
+        ret_arr = @emails.split(", ")
+      elsif @emails.include?(" ")
+        ret_arr = @emails.split(" ")
+      else 
+        ret_arr = @emails.split(",")
+      end
+    }
+    
     ret_arr2 = []
     ret_arr.each {|item|
       unless ret_arr2.include?(item)
